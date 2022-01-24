@@ -1,0 +1,34 @@
+package Aplicacion;
+
+
+class Programa implements Runnable{
+
+	@Override
+	public void run() {
+		
+		System.out.println("Estoy ejecutandome en segundo plano desde el hilo: "+ Thread.currentThread().getName());
+		
+	}
+	
+}
+
+
+
+public class HolaMundo {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hola Mundo!!! Desde el hilo: "+ Thread.currentThread().getName());
+		
+		Programa programa1 = new Programa();
+		programa1.run();
+		
+		Thread ejecucion1 = new Thread(programa1);
+		ejecucion1.start();
+		
+		Programa programa2 = new Programa();
+		Thread ejecucion2 = new Thread(programa2);
+		
+	}
+
+}

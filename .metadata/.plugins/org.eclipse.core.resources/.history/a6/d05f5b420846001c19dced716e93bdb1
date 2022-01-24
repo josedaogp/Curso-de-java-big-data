@@ -1,0 +1,30 @@
+package Aplicacion;
+
+import java.util.Optional;
+
+public class HolaOptionals {
+
+	public static void main(String[] args) {
+		
+		Optional<String> optional1 = Optional.of("Hola");
+		Optional<String> optional2 = Optional.empty();
+		
+		String cadena1 = "Hola";
+		String cadena2 = null;
+		
+		System.out.println("optional1: " + optional1);
+		System.out.println("optional2: " + optional2);
+		System.out.println("cadena1: " + cadena1);
+		System.out.println("cadena2: " + cadena2);
+		
+		
+		System.out.println("optional1.get: " + optional1.get());
+		
+		if (optional2.isPresent()) {
+			System.out.println("optional2.get: " + optional2.get());
+		}else System.out.println("Optional2 no tiene nada");
+		
+
+	}
+
+}
