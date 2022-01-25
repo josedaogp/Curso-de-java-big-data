@@ -5,7 +5,7 @@ Parte del código impartido a alumnos en un curso de java orientado al big data.
 ## Temario impartido
 A lo largo del curso se impartió el siguiente temario:
 - Introducción al Big Data y repaso por las herramientas más importantes a día de hoy.
-- Pequeño tutorial sobre Spring Tool Suite 4.
+- Pequeño tutorial sobre Spring Tool Suite 4 y Spring Boot.
 - Sintáxis básica de Java (clases, beans, constructores, excepciones, etc).
 - Uso y sintaxis de expresiones lambdas.
 - Uso y sintaxis de optionals.
